@@ -7,10 +7,16 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 
 function askTheUser () {
-    return inquirer
+    inquirer
    .prompt(questions)
-   .then(generateMarkdown)
-   .then(console.log)
+   .then((data) => {
+    const filename = 'ReadMeFile.md';
+    fs.writeFile(filename, generateMarkdown({...data}), (err) =>
+      err ? console.log(err) : console.log('Success!')
+    );
+  });
+
+//    .then(console.log);
  };
 
 // TODO: Create a function to write README file

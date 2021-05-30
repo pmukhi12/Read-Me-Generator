@@ -15,7 +15,8 @@ function generateMarkdown(data) {
   const markdownTemplate = 
   `# ${data.title}
   
-  ## ${data.description}
+  ## Description
+  ${data.description} 
 
   ## Table of Contents 
 
@@ -32,9 +33,10 @@ function generateMarkdown(data) {
   ## Installation
 
   To install necessary dependencies, run the following command:
-  ```
+  \'\'\'
+  ${data.install}
+  \'\'\'
 
-  ```
   ## Usage
 
   ## Contributing

@@ -12,12 +12,12 @@ const questions =
           },
           {
             type: 'input',
-            name: 'description',
-            message: 'What is the description of your project?',
+            name: 'license',
+            message: 'What is the license for your project?',
           },
           {
             type: 'input',
-            name: 'installation-instructions',
+            name: 'install',
             message: 'What are the installation instructions for your project?',
           },
       ]
