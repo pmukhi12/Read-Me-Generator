@@ -3,28 +3,25 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 // list of questions asked to the user
 const questions = require('./utils/questions');
+// function to actually generate the markdowns
 const generateMarkdown = require('./utils/generateMarkdown');
 
-
+// function to run inquirer
 function askTheUser () {
     inquirer
+    // prompt the questions
    .prompt(questions)
+    // take the response and write the file
    .then((data) => {
+    // variable to save fileName
     const filename = 'ReadMeFile.md';
-    console.log(data);
+    // file system method to actually write the file
     fs.writeFile(filename, generateMarkdown({...data}), (err) =>
       err ? console.log(err) : console.log('Success!')
     );
   });
 
-//    .then(console.log);
  };
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// Function call to initialize app
+// call the function
 askTheUser();

@@ -1,3 +1,4 @@
+// questions asked in inquirer
 const questions = 
     [
         {
@@ -31,6 +32,7 @@ const questions =
             name: 'install',
             message: 'What are the installation instructions for your project?',
           }
-      ]
+      ];
 
-      module.exports = questions
+// export questions
+module.exports = questions;

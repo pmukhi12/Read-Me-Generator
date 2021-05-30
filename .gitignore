@@ -4,4 +4,8 @@ ProjectInstructions.md
 
 package-lock.json
 
+.DS_store
+
+.vscode
+
 
