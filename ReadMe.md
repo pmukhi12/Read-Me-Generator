@@ -1,7 +1,7 @@
 # ReadMe Generator
   
   ## Description
-  Generates descriptive ReadME's! Like this one 
+  Generates ReadMes like this one! 
 
   ## Table of Contents 
 
@@ -47,17 +47,25 @@
 
   To install necessary dependencies, install the following
   ```
-  git clone the repo, and make sure node and inquirer are installed
+  git clone, install node, npm i inquirer
   ```
 
   ## Usage
 
+  To create ReadMes
+
   ## Contributing
+
+  N/A
 
   ## Tests
 
   To run tests, run the following command:
  
-  more code
+  N/A
  
   ## Questions;
+  
+  N/a
+
+  

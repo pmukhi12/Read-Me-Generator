@@ -31,7 +31,27 @@ const questions =
             type: 'input',
             name: 'install',
             message: 'What are the installation instructions for your project?',
-          }
+          },
+          {
+            type: 'input',
+            name: 'usage',
+            message: 'How are you planning on using this project?',
+          },
+          {
+            type: 'input',
+            name: 'contributing',
+            message: 'Who else contributed to this project?',
+          },
+          {
+            type: 'input',
+            name: 'tests',
+            message: 'What are the applicable tests?',
+          },
+          {
+            type: 'input',
+            name: 'questions',
+            message: 'What are the applicable questions?',
+          },
       ];
 
 // export questions

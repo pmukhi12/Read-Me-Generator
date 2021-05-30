@@ -1,3 +1,4 @@
+// 
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -99,15 +100,24 @@ function generateMarkdown(data) {
 
   ## Usage
 
+  ${data.usage}
+
   ## Contributing
+
+  ${data.contributing}
 
   ## Tests
 
   To run tests, run the following command:
  
-  more code
+  ${data.tests}
  
-  ## Questions;`;
+  ## Questions;
+  
+  ${data.questions}
+
+  `;
+
   return markdownTemplate;
 };
 
