@@ -11,6 +11,7 @@ function askTheUser () {
    .prompt(questions)
    .then((data) => {
     const filename = 'ReadMeFile.md';
+    console.log(data);
     fs.writeFile(filename, generateMarkdown({...data}), (err) =>
       err ? console.log(err) : console.log('Success!')
     );
